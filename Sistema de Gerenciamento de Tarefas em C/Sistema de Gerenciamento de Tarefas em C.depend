@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1745784808 source:c:\users\muril\documents\portfolio\sistema de gerenciamento de tarefas em c\sistema de gerenciamento de tarefas em c\file_handler.c
+	"task_manager.h"
+	<stdio.h>
+
+1745778924 c:\users\muril\documents\portfolio\sistema de gerenciamento de tarefas em c\sistema de gerenciamento de tarefas em c\task_manager.h
+
+1745785259 source:c:\users\muril\documents\portfolio\sistema de gerenciamento de tarefas em c\sistema de gerenciamento de tarefas em c\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<unistd.h>
+	"task_manager.h"
+	"menu.h"
+	"file_handler.h"
+
+1745768950 c:\users\muril\documents\portfolio\sistema de gerenciamento de tarefas em c\sistema de gerenciamento de tarefas em c\menu.h
+
+1745767373 c:\users\muril\documents\portfolio\sistema de gerenciamento de tarefas em c\sistema de gerenciamento de tarefas em c\file_handler.h
+
+1745785114 source:c:\users\muril\documents\portfolio\sistema de gerenciamento de tarefas em c\sistema de gerenciamento de tarefas em c\task_manager.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"task_manager.h"
+
+1745769930 source:c:\users\muril\documents\portfolio\sistema de gerenciamento de tarefas em c\sistema de gerenciamento de tarefas em c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"task_manager.h"
+	"menu.h"
+
