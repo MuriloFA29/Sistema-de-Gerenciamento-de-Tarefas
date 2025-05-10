@@ -14,7 +14,7 @@ Este é um gerenciador de tarefas desenvolvido em C, permitindo criar, editar, v
 1. **Clone o repositório:**
    Se ainda não tiver o projeto, clone-o para sua máquina local com o comando:
    ```bash
-   git clone https://github.com/SEU_USUARIO/Sistema-de-Gerenciamento-de-Tarefas.git
+   git clone https://github.com/MuriloFA29/Sistema-de-Gerenciamento-de-Tarefas.git
 
 ## Projeto: Sistema de Gerenciamento de Tarefas (To-Do CLI App)
 
