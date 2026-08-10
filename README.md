@@ -1,48 +1,65 @@
-# Sistema de Gerenciamento de Tarefas
+# 📋 Sistema de Gerenciamento de Tarefas (CLI)
 
-Este é um gerenciador de tarefas desenvolvido em C, permitindo criar, editar, visualizar e excluir tarefas. Inclui funcionalidades extras como o modo Pomodoro e a exportação de relatórios de tarefas concluídas. A aplicação é executada no terminal e oferece uma interface simples via menu.
+> Um gerenciador de tarefas completo em C executado no terminal, com persistência de dados, modo Pomodoro integrado e geração de relatórios.
 
-## Como Rodar
+---
 
-### Requisitos
+## 🛠️ Tech Stack & Conceitos Aplicados
 
-- Um compilador C (como `gcc`).
-- Sistema operacional que suporte a execução de C no terminal (Windows, Linux, MacOS).
+* **Linguagem:** C
+* **Manipulação de Arquivos:** Persistência de dados em arquivos `.txt` (`fopen`, `fwrite`, `fread`).
+* **Estrutura de Dados:** Uso de structs (`struct Tarefa`) e ponteiros para arrays dinâmicos.
+* **Gerenciamento de Memória:** Alocação dinâmica com `malloc` e `free`.
+* **Algoritmos:** Ordenação de tarefas por data ou prioridade utilizando Bubble Sort.
+* **Arquitetura:** Modularização de código através de arquivos `.c` e `.h`.
 
-### Passos
+---
+
+## ✨ Funcionalidades
+
+- [x] **Gestão de Tarefas:** Adicionar (título, descrição, prioridade e data), editar, listar e remover.
+- [x] **Filtros e Status:** Listagem filtrada por status ou prioridade e marcação de conclusão.
+- [x] **Persistência de Dados:** Salva e carrega automaticamente as tarefas em arquivo local.
+- [x] **Modo Pomodoro:** Timer integrado no terminal para auxiliar na produtividade.
+- [x] **Exportação de Relatórios:** Geração de relatórios de tarefas concluídas em `.txt`.
+
+---
+
+## 📁 Estrutura do Projeto
+
+* `main.c` — Ponto de entrada do programa.
+* `task_manager.c / .h` — Lógica principal de gerenciamento das tarefas.
+* `file_handler.c / .h` — Leitura, escrita e persistência em arquivos.
+* `menu.c / .h` — Interface do usuário no terminal.
+
+---
+
+## 🚀 Como Rodar o Projeto
+
+### Pré-requisitos
+* Um compilador C instalado (ex: `gcc`).
+* Terminal (Windows, Linux ou macOS).
+
+### Passo a Passo
 
 1. **Clone o repositório:**
-   Se ainda não tiver o projeto, clone-o para sua máquina local com o comando:
    ```bash
    git clone https://github.com/MuriloFA29/Sistema-de-Gerenciamento-de-Tarefas.git
 
-## Projeto: Sistema de Gerenciamento de Tarefas (To-Do CLI App)
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd Sistema-de-Gerenciamento-de-Tarefas
 
-Este projeto é um sistema de gerenciamento de tarefas desenvolvido em C, com uma interface de linha de comando (CLI). Ele permite que o usuário adicione, edite, visualize, e remova tarefas, além de funcionalidades extras, como um modo Pomodoro e a exportação de relatórios de tarefas concluídas.
+3. **Compile o projeto com o GCC:**
+   ```bash
+   gcc main.c task_manager.c file_handler.c menu.c -o sistema_tarefas
 
-### Funcionalidades:
-- Adicionar tarefas com título, descrição, prioridade e data.
-- Listar tarefas, com a opção de filtrar por status ou prioridade.
-- Marcar tarefas como concluídas.
-- Remover ou editar tarefas.
-- Persistência de dados: salvar tudo em arquivos `.txt`.
-- Organizar as tarefas por data ou prioridade, utilizando algoritmos de ordenação.
+4. **Execute o programa:**
+   ```bash
+   sistema_tarefas.exe
 
-### Estrutura do Projeto:
-- **main.c** — Entrada do programa.
-- **task_manager.c/h** — Lógica de gerenciamento de tarefas.
-- **file_handler.c/h** — Leitura e escrita de arquivos.
-- **menu.c/h** — Interface do terminal.
+---
 
-### Conceitos Aplicados:
-- Manipulação de arquivos (`fopen`, `fwrite`, `fread`).
-- Uso de ponteiros e structs (ex.: `struct Tarefa`, ponteiro para arrays dinâmicos).
-- Modularização de código (arquivos `.c` e `.h`).
-- Algoritmos de ordenação (Bubble Sort).
-- Alocação dinâmica com `malloc`/`free`.
-- Validação de entradas e controle de fluxo no terminal.
+## 📄 Licença
 
-### Funcionalidades Extras:
-- Exportação de relatórios de tarefas concluídas em formato `.txt`.
-- Modo Pomodoro para aumentar a produtividade.
-- Interface em terminal bem estruturada e fácil de usar.
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
